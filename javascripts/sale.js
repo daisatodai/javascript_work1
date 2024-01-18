@@ -55,7 +55,6 @@ function subtotal() {
 
 function display() {
   return purchases.map(purchase => {
-    debugger
     return `${purchase.product.name} ${purchase.product.price}円:${purchase.number}点\n`;//商品名、値段、個数を追加した分だけ返す表示
   }).join("")
 };
